@@ -44,15 +44,32 @@
         <a href="#contact" style="--i: 4">Contact</a>
       </nav>
     </header>
-
+    
 <head>
-    <title>Craft is your partner in agile production solutions.</title>
+    <title>Craft is your partner in agile production solutions</title>
+    <style>
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio (9 / 16 = 0.5625) */
+            height: 0;
+            overflow: hidden;
+        }
+        .video-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
 </head>
 <body>
-    <h2>Craft is your partner in agile production solutions.</h2>
-    <video width="640" height="360" controls>
-        <source src="https://video.craftww.com/homepage-video-loop.mp4" type="video/mp4">
-    </video>
+    <h2>Craft is your partner in agile production solutions</h2>
+    <div class="video-container">
+        <video controls>
+            <source src="https://video.craftww.com/homepage-video-loop.mp4" type="video/mp4">
+        </video>
+    </div>
 </body>
 
     <div class="header2" style="margin-top: 160px">
